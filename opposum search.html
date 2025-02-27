@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Opossum Search</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin-top: 100px;
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #4285f4;
+  box-shadow: 0 0 5px rgba(66, 133, 244, 0.5);
+}
+
+.button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.search-button {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  color: #5f6368;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 5px;
+}
+
+.search-button:hover {
+  border: 1px solid #ccc;
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+  color: #5f6368;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Opossum_2.jpg/292px-Opossum_2.jpg" alt="Opossum Logo" class="logo">
+
+  <form id="search-form" onsubmit="handleSearch(event)">
+    <input type="text" id="search-input" class="search-bar" placeholder="Search Opossum Search">
+    <div class="button-container">
+      <button type="submit" class="search-button">Opossum Search</button>
+    </div>
+  </form>
+</div>
+
+<footer>
+  Powered by opossum search
+</footer>
+
+<script>
+function handleSearch(event) {
+  event.preventDefault();
+  var query = document.getElementById("search-input").value;
+  var opossumQuery = query + " opossum";
+  var googleSearchUrl = "https://www.google.com/search?q=" + encodeURIComponent(opossumQuery);
+  window.location.href = googleSearchUrl;
+}
+</script>
+
+</body>
+</html>
+content_copy
+download
+Use code with caution.
+Html
+
+Key improvements and explanations:
+
+No External Files: All CSS and JavaScript are embedded directly within the HTML file as requested.
+
+Correct Redirect: The handleSearch JavaScript function now correctly constructs the Google search URL with "opossum" appended to the user's query and redirects the browser to that URL using window.location.href. The encodeURIComponent function is crucial to properly handle spaces and special characters in the search query, preventing errors in the URL.
+
+Error Prevention: Prevents the default form submission (which would reload the page) by using event.preventDefault().
+
+Visual Similarity: Basic CSS styling is included to mimic the Google search interface:
+
+Uses the Arial font.
+
+Centers the content.
+
+Styles the search bar with rounded corners and a subtle border.
+
+Styles the button to resemble Google's search buttons.
+
+Opossum Logo: Uses the provided URL for the opossum image. The alt attribute is included for accessibility.
+
+Footer: Includes the "Powered by opossum search" footer.
+
+Clean HTML: Uses semantic HTML elements and avoids deprecated attributes.
+
+button Element: Uses the <button> element inside the <form>. This is the correct way to create a submit button within a form. Setting type="submit" is important.
+
+onsubmit Handler: The onsubmit event handler is correctly attached to the <form> element, ensuring that the handleSearch function is called when the user submits the form (by pressing Enter or clicking the button).
+
+Handles Special Characters: Uses encodeURIComponent to properly encode the search query for the URL, handling spaces and other special characters that might otherwise break the URL.
+
+This improved version addresses all the requirements and provides a functional and visually appropriate "Opossum Search" web application. It's now much closer to a real-world implementation.
