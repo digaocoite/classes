@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MU Connect Heuristic Checklist</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 800px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    .heuristic-block {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+    .heuristic-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .description {
+      font-style: italic;
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .severity {
+      margin: 10px 0;
+    }
+    .severity label {
+      margin-right: 15px;
+    }
+    textarea {
+      width: 100%;
+      height: 60px;
+      resize: vertical;
+      margin-top: 5px;
+    }
+    .submit-btn {
+      background-color: #007BFF;
+      color: #fff;
+      font-size: 1rem;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .submit-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>MU Connect Heuristic Checklist</h1>
+  <p>
+    <strong>Purpose:</strong> Quickly identify interface-level issues related to MU Connect’s usability.
+    Please rate each heuristic from 0 (no issue) to 4 (critical issue), and optionally leave a comment.
+  </p>
+  <p><em>0 = no issue | 1 = minor issue | 2 = moderate issue | 3 = major issue | 4 = critical issue</em></p>
+
+  <!-- Heuristic 1 -->
+  <div class="heuristic-block">
+    <div class="heuristic-title">1. Visibility of System Status</div>
+    <div class="description">
+      Does MU Connect keep users informed about what's going on?
+      (e.g., loading indicators, progress bars, status updates on scheduling appointments).
+    </div>
+    <div class="severity">
+      <label><input type="radio" name="visibility-status" value="0">0</label>
+      <label><input type="radio" name="visibility-status" value="1">1</label>
+      <label><input type="radio" name="visibility-status" value="2">2</label>
+      <label><input type="radio" name="visibility-status" value="3">3</label>
+      <label><input type="radio" name="visibility-status" value="4">4</label>
+    </div>
+    <textarea name="visibility-status-comments" placeholder="Additional comments (optional)"></textarea>
+  </div>
+
+  <!-- Heuristic 2 -->
+  <div class="heuristic-block">
+    <div class="heuristic-title">2. Match Between System and the Real World</div>
+    <div class="description">
+      Are labels, language, icons, and workflows familiar and intuitive, reflecting campus realities
+      (e.g., “Flags,” “Kudos,” “Advisors,” “Appointments”)?
+    </div>
+    <div class="severity">
+      <label><input type="radio" name="match-realworld" value="0">0</label>
+      <label><input type="radio" name="match-realworld" value="1">1</label>
+      <label><input type="radio" name="match-realworld" value="2">2</label>
+      <label><input type="radio" name="match-realworld" value="3">3</label>
+      <label><input type="radio" name="match-realworld" value="4">4</label>
+    </div>
+    <textarea name="match-realworld-comments" placeholder="Additional comments (optional)"></textarea>
+  </div>
+
+  <!-- Heuristic 3 -->
+  <div class="heuristic-block">
+    <div class="heuristic-title">3. User Control and Freedom</div>
+    <div class="description">
+      Can users easily undo or exit from an action? Are there “Back” or “Cancel” options?
+      Is it straightforward to reverse a mistaken step?
+    </div>
+    <div class="severity">
+      <label><input type="radio" name="user-control" value="0">0</label>
+      <label><input type="radio" name="user-control" value="1">1</label>
+      <label><input type="radio" name="user-control" value="2">2</label>
+      <label><input type="radio" name="user-control" value="3">3</label>
+      <label><input type="radio" name="user-control" value="4">4</label>
+    </div>
+    <textarea name="user-control-comments" placeholder="Additional comments (optional)"></textarea>
+  </div>
+
+  <!-- Heuristic 4 -->
+  <div class="heuristic-block">
+    <div class="heuristic-title">4. Consistency and Standards</div>
+    <div class="description">
+      Are icons, terminology, and layout consistent across MU Connect pages or sections?
+      Do platform conventions match typical campus expectations?
+    </div>
+    <div class="severity">
+      <label><input type="radio" name="consistency-standards" value="0">0</label>
+      <label><input type="radio" name="consistency-standards" value="1">1</label>
+      <label><input type="radio" name="consistency-standards" value="2">2</label>
+      <label><input type="radio" name="consistency-standards" value="3">3</label>
+      <label><input type="radio" name="consistency-standards" value="4">4</label>
+    </div>
+    <textarea name="consistency-standards-comments" placeholder="Additional comments (optional)"></textarea>
+  </div>
+
+  <!-- Heuristic 5 -->
+  <div class="heuristic-block">
+    <div class="heuristic-title">5. Error Prevention</div>
+    <div class="description">
+      Does MU Connect proactively prevent user errors (e.g., forms with validation, confirmation dialogs)?
+      Is it hard for users to make mistakes?
+    </div>
+    <div class="severity">
+      <label><input type="radio" name="error-prevention" value="0">0</label>
+      <label><input type="radio" name="error-prevention" value="1">1</label>
+      <label><input type="radio" name="error-prevention" value="2">2</label>
+      <label><input type="radio" name="error-prevention" value="3">3</label>
+      <label><input type="radio" name="error-prevention" value="4">4</label>
+    </div>
+    <textarea name="error-prevention-comments" placeholder="Additional comments (optional)"></textarea>
+  </div>
+
+  <!-- Heuristic 6 -->
+  <div class="heuristic-block">
+    <div class="heuristic-title">6. Recognition Rather Than Recall</div>
+    <div class="description">
+      Are options, icons, and instructions visible and easy to recognize instead of relying
+      on user memorization? Does the system provide prompts?
+    </div>
+    <div class="severity">
+      <label><input type="radio" name="recognition-recall" value="0">0</label>
+      <label><input type="radio" name="recognition-recall" value="1">1</label>
+      <label><input type="radio" name="recognition-recall" value="2">2</label>
+      <label><input type="radio" name="recognition-recall" value="3">3</label>
+      <label><input type="radio" name="recognition-recall" value="4">4</label>
+    </div>
+    <textarea name="recognition-recall-comments" placeholder="Additional comments (optional)"></textarea>
+  </div>
+
+  <!-- Heuristic 7 -->
+  <div class="heuristic-block">
+    <div class="heuristic-title">7. Flexibility and Efficiency of Use</div>
+    <div class="description">
+      Can advanced users perform tasks quickly (e.g., keyboard shortcuts, streamlined workflows),
+      while novices still find it accessible?
+    </div>
+    <div class="severity">
+      <label><input type="radio" name="flexibility-efficiency" value="0">0</label>
+      <label><input type="radio" name="flexibility-efficiency" value="1">1</label>
+      <label><input type="radio" name="flexibility-efficiency" value="2">2</label>
+      <label><input type="radio" name="flexibility-efficiency" value="3">3</label>
+      <label><input type="radio" name="flexibility-efficiency" value="4">4</label>
+    </div>
+    <textarea name="flexibility-efficiency-comments" placeholder="Additional comments (optional)"></textarea>
+  </div>
+
+  <!-- Heuristic 8 -->
+  <div class="heuristic-block">
+    <div class="heuristic-title">8. Aesthetic and Minimalist Design</div>
+    <div class="description">
+      Is the interface visually pleasing and free of irrelevant elements or clutter
+      that might confuse or overwhelm users (especially new students, staff)?
+    </div>
+    <div class="severity">
+      <label><input type="radio" name="aesthetic-design" value="0">0</label>
+      <label><input type="radio" name="aesthetic-design" value="1">1</label>
+      <label><input type="radio" name="aesthetic-design" value="2">2</label>
+      <label><input type="radio" name="aesthetic-design" value="3">3</label>
+      <label><input type="radio" name="aesthetic-design" value="4">4</label>
+    </div>
+    <textarea name="aesthetic-design-comments" placeholder="Additional comments (optional)"></textarea>
+  </div>
+
+  <!-- Heuristic 9 -->
+  <div class="heuristic-block">
+    <div class="heuristic-title">9. Help Users Recognize, Diagnose, and Recover from Errors</div>
+    <div class="description">
+      When an error occurs (e.g., scheduling conflict, invalid flag entry), does the system
+      provide clear error messages with constructive solutions?
+    </div>
+    <div class="severity">
+      <label><input type="radio" name="error-recovery" value="0">0</label>
+      <label><input type="radio" name="error-recovery" value="1">1</label>
+      <label><input type="radio" name="error-recovery" value="2">2</label>
+      <label><input type="radio" name="error-recovery" value="3">3</label>
+      <label><input type="radio" name="error-recovery" value="4">4</label>
+    </div>
+    <textarea name="error-recovery-comments" placeholder="Additional comments (optional)"></textarea>
+  </div>
+
+  <!-- Heuristic 10 -->
+  <div class="heuristic-block">
+    <div class="heuristic-title">10. Help and Documentation</div>
+    <div class="description">
+      Does MU Connect provide adequate help pages, tooltips, FAQs, or guidance for both first-time
+      and advanced users? Is it easy to find help resources?
+    </div>
+    <div class="severity">
+      <label><input type="radio" name="help-docs" value="0">0</label>
+      <label><input type="radio" name="help-docs" value="1">1</label>
+      <label><input type="radio" name="help-docs" value="2">2</label>
+      <label><input type="radio" name="help-docs" value="3">3</label>
+      <label><input type="radio" name="help-docs" value="4">4</label>
+    </div>
+    <textarea name="help-docs-comments" placeholder="Additional comments (optional)"></textarea>
+  </div>
+
+  <!-- Additional MU Connect-Specific Aspects (Optional) -->
+  <!-- Example: Kudos/Flags Terminology, Accessibility, etc. -->
+
+  <div class="heuristic-block">
+    <div class="heuristic-title">Additional Comments (Optional)</div>
+    <textarea name="overall-comments" placeholder="Anything else you'd like to mention?"></textarea>
+  </div>
+
+  <button class="submit-btn" type="submit">Submit Checklist</button>
+</body>
+</html>
