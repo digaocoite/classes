@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,9 +19,14 @@
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
+        .banner img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+        h1 {
             text-align: center;
             color: #333;
+            margin-top: 15px;
         }
         .section-title {
             font-size: 18px;
@@ -78,72 +83,73 @@
 <body>
 
 <div class="container">
+    <div class="banner">
+        <img src="https://i.ytimg.com/vi/Q1HSjsp3W6w/hqdefault.jpg" alt="MU Connect Banner">
+    </div>
+
     <h1>MU Connect Student Experience Survey</h1>
     <p style="text-align: center;">Help us improve MU Connect by sharing your thoughts! This survey takes about <b>2 minutes</b> to complete.</p>
 
-    <!-- Section 1: General Usage -->
-    <div class="section-title">📌 General Usage</div>
-    <div class="question">1. How often do you use MU Connect?</div>
+    <!-- Section 1: Engagement with Instructors & Advisors -->
+    <div class="section-title">Engagement with Instructors & Advisors</div>
+    
+    <div class="question">1. MU Connect has made it easier for me to engage with my instructors and advisors.</div>
     <div class="options">
-        <label><input type="radio" name="usage" value="Daily"> Daily</label>
-        <label><input type="radio" name="usage" value="Weekly"> Weekly</label>
-        <label><input type="radio" name="usage" value="Monthly"> Monthly</label>
-        <label><input type="radio" name="usage" value="Rarely"> Rarely</label>
-        <label><input type="radio" name="usage" value="Never"> Never</label>
+        <label><input type="radio" name="engagement" value="1"> Strongly Disagree</label>
+        <label><input type="radio" name="engagement" value="2"> Disagree</label>
+        <label><input type="radio" name="engagement" value="3"> Neutral</label>
+        <label><input type="radio" name="engagement" value="4"> Agree</label>
+        <label><input type="radio" name="engagement" value="5"> Strongly Agree</label>
     </div>
 
-    <div class="question">2. What features do you use the most? (Select all that apply)</div>
+    <div class="question">2. Since using MU Connect, I have communicated more frequently with my advisor or instructor.</div>
     <div class="options">
-        <label><input type="checkbox" name="features"> Scheduling Appointments</label>
-        <label><input type="checkbox" name="features"> Viewing Kudos or Flags</label>
-        <label><input type="checkbox" name="features"> Checking Academic Support Resources</label>
-        <label><input type="checkbox" name="features"> Communicating with Faculty/Staff</label>
-        <label><input type="checkbox" name="features"> Other (please specify):</label>
-        <textarea placeholder="Type here..."></textarea>
+        <label><input type="radio" name="communication" value="1"> Strongly Disagree</label>
+        <label><input type="radio" name="communication" value="2"> Disagree</label>
+        <label><input type="radio" name="communication" value="3"> Neutral</label>
+        <label><input type="radio" name="communication" value="4"> Agree</label>
+        <label><input type="radio" name="communication" value="5"> Strongly Agree</label>
     </div>
 
-    <!-- Section 2: Ease of Use & Navigation -->
-    <div class="section-title">🖥 Ease of Use & Navigation</div>
-    <div class="question">3. MU Connect is easy to navigate.</div>
+    <!-- Section 2: Resolving Issues Quickly -->
+    <div class="section-title">Resolving Issues Quickly</div>
+
+    <div class="question">3. MU Connect helps me find the resources I need (academic support, advising, tutoring) faster than other methods.</div>
     <div class="options">
-        <label><input type="radio" name="navigation" value="1"> 1 - Strongly Disagree</label>
-        <label><input type="radio" name="navigation" value="2"> 2 - Disagree</label>
-        <label><input type="radio" name="navigation" value="3"> 3 - Neutral</label>
-        <label><input type="radio" name="navigation" value="4"> 4 - Agree</label>
-        <label><input type="radio" name="navigation" value="5"> 5 - Strongly Agree</label>
+        <label><input type="radio" name="resources" value="1"> Strongly Disagree</label>
+        <label><input type="radio" name="resources" value="2"> Disagree</label>
+        <label><input type="radio" name="resources" value="3"> Neutral</label>
+        <label><input type="radio" name="resources" value="4"> Agree</label>
+        <label><input type="radio" name="resources" value="5"> Strongly Agree</label>
     </div>
 
-    <div class="question">4. Finding and scheduling an appointment is straightforward.</div>
+    <!-- Section 3: Impact on Academic Retention -->
+    <div class="section-title">Impact on Academic Retention & Success</div>
+
+    <div class="question">4. MU Connect has helped me stay on track with my academic goals.</div>
     <div class="options">
-        <label><input type="radio" name="appointment" value="1"> 1 - Strongly Disagree</label>
-        <label><input type="radio" name="appointment" value="2"> 2 - Disagree</label>
-        <label><input type="radio" name="appointment" value="3"> 3 - Neutral</label>
-        <label><input type="radio" name="appointment" value="4"> 4 - Agree</label>
-        <label><input type="radio" name="appointment" value="5"> 5 - Strongly Agree</label>
+        <label><input type="radio" name="track" value="1"> Strongly Disagree</label>
+        <label><input type="radio" name="track" value="2"> Disagree</label>
+        <label><input type="radio" name="track" value="3"> Neutral</label>
+        <label><input type="radio" name="track" value="4"> Agree</label>
+        <label><input type="radio" name="track" value="5"> Strongly Agree</label>
     </div>
 
-    <!-- Section 3: Impact of Flags & Kudos -->
-    <div class="section-title">🏆 Impact of Flags & Kudos</div>
-    <div class="question">5. Receiving a Kudos made me feel recognized for my academic progress.</div>
+    <!-- Section 4: Overall Satisfaction -->
+    <div class="section-title">Overall Satisfaction with MU Connect</div>
+
+    <div class="question">5. Overall, how satisfied are you with MU Connect?</div>
     <div class="options">
-        <label><input type="radio" name="kudos-impact" value="1"> 1 - Strongly Disagree</label>
-        <label><input type="radio" name="kudos-impact" value="2"> 2 - Disagree</label>
-        <label><input type="radio" name="kudos-impact" value="3"> 3 - Neutral</label>
-        <label><input type="radio" name="kudos-impact" value="4"> 4 - Agree</label>
-        <label><input type="radio" name="kudos-impact" value="5"> 5 - Strongly Agree</label>
+        <label><input type="radio" name="satisfaction" value="1"> Very Dissatisfied</label>
+        <label><input type="radio" name="satisfaction" value="2"> Dissatisfied</label>
+        <label><input type="radio" name="satisfaction" value="3"> Neutral</label>
+        <label><input type="radio" name="satisfaction" value="4"> Satisfied</label>
+        <label><input type="radio" name="satisfaction" value="5"> Very Satisfied</label>
     </div>
 
-    <div class="question">6. Receiving a Flag encouraged me to take action (e.g., meet with an advisor, get tutoring, reach out to my professor).</div>
-    <div class="options">
-        <label><input type="radio" name="flag-impact" value="1"> 1 - Strongly Disagree</label>
-        <label><input type="radio" name="flag-impact" value="2"> 2 - Disagree</label>
-        <label><input type="radio" name="flag-impact" value="3"> 3 - Neutral</label>
-        <label><input type="radio" name="flag-impact" value="4"> 4 - Agree</label>
-        <label><input type="radio" name="flag-impact" value="5"> 5 - Strongly Agree</label>
-    </div>
+    <div class="question">6. What do you like the most about MU Connect?</div>
+    <textarea placeholder="Type your response here..."></textarea>
 
-    <!-- Open-ended questions -->
-    <div class="section-title">📝 Feedback</div>
     <div class="question">7. What improvements would you like to see in MU Connect?</div>
     <textarea placeholder="Type your response here..."></textarea>
 
