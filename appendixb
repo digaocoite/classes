@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appendix B - Usability Testing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1, h2, h3 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        h3 {
+            margin-top: 30px;
+            color: #34495e;
+        }
+        p, li {
+            font-size: 16px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .highlight {
+            background: #eef6fb;
+            padding: 10px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+        .tasks, .questions {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f0f0f5;
+            border-radius: 6px;
+        }
+        .tasks li, .questions li {
+            margin: 10px 0;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Appendix B – Usability Testing</h1>
+        <h2>Sample Interview Script</h2>
+
+        <div class="section">
+            <h3>Greeting</h3>
+            <p>
+                Thank you for agreeing to participate in this interview regarding the evaluation of the use of Kahoot for Social Studies. Your feedback today will help provide better insight into the use of Kahoot as a tool for learning and understanding in social studies. You will provide feedback to a series of questions, you may discuss other elements of the Kahoot app for learning if they are not discussed, and you will complete a series of tasks relating to the usability of Kahoot (<em>see usability tasks “For Teachers” below</em>).
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>For Students</h3>
+            <div class="tasks">
+                <strong>Usability Tasks for Users and Kahoot for Social Studies:</strong>
+                <ul>
+                    <li>Note time and number of clicks it took to complete each task.</li>
+                </ul>
+            </div>
+            <div class="questions">
+                <strong>Questions:</strong>
+                <ul>
+                    <li>Questions about tasks, feelings about Kahoot, etc.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Method Notes</h3>
+            <div class="highlight">
+                <p><strong>QUALITATIVE & QUANTITATIVE METHOD:</strong></p>
+                <p>“Qualitative methods are much better suited for answering questions about why or how to fix a problem, whereas quantitative methods do a much better job answering how many and how much types of questions.”</p>
+                <p>“Remember to analyze not just how students use Kahoot, but also how well it supports meaningful social studies learning.”</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Teachers – Usability Tasks</h3>
+            <p>Please perform as you normally would (normal speed, please read all instructions on the web page) and please ask questions and take breaks as needed.</p>
+            <p><em>(For evaluator: document time user takes to complete each task and number of clicks made.)</em></p>
+            <div class="tasks">
+                <ol>
+                    <li>Task 1: Create a 10-question quiz on a historical topic using the Kahoot Generator.</li>
+                    <li>Task 2: Connect your account to Google Slides and import slides to your Kahoot.</li>
+                    <li>Task 3: Using the Kahoot library, find and open a history-themed slide set.</li>
+                    <li>Task 4: Explore the Kahoot marketplace and locate a Social Studies-themed Kahoot course.</li>
+                    <li>Task 5: Find a Social Studies-themed Kahoot using the Discover page.</li>
+                </ol>
+            </div>
+
+            <div class="questions">
+                <strong>Reflection Questions:</strong>
+                <ul>
+                    <li>What was the most challenging aspect of the interface?</li>
+                    <li>Did you find it easy to adapt Kahoot features to your specific needs?</li>
+                    <li>How well does Kahoot support your assessment of key social studies concepts?</li>
+                    <li>How do you integrate Kahoot within broader instructional strategies?</li>
+                    <li>Are there any features you wish Kahoot had to support your pedagogical goals?</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Students – Usability Tasks</h3>
+            <p><strong>Goals for Student Testing:</strong></p>
+            <p><a href="https://create.kahoot.it/details/1156928b-635c-4e49-835b-e4a94c35a625" target="_blank">View Example Kahoot Quiz</a></p>
+            <div class="tasks">
+                <ol>
+                    <li>Task 1: Using the Discover tab, find the Social Studies by Kahoot! Channel.</li>
+                    <li>Task 2: Find and open the “Why Do We Learn History” quiz in the Social Studies by Kahoot! Channel.</li>
+                    <li>Task 3: Complete the 10-question “Why Do We Learn History?” quiz.</li>
+                    <li>Task 4: Find and practice using the Flashcard feature.</li>
+                    <li>Task 5: Use the Play Solo feature to review all questions.</li>
+                </ol>
+            </div>
+
+            <div class="questions">
+                <strong>Retrospective Think-Aloud Questions:</strong>
+                <ul>
+                    <li>Do you feel like Kahoot helps you remember information better than books or lessons? Explain.</li>
+                    <li>Is Kahoot’s pace too fast or too slow? Would you change it?</li>
+                    <li>Do you rush to answer or read carefully? Explain.</li>
+                    <li>Which tools were most beneficial for your learning?</li>
+                    <li>What tools would you use again in school to help retain information?</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2025 Team Kahoot – Diogenes Da Silva Santos & Lauryn Kamler | ISLT_9455
+        </div>
+    </div>
+</body>
+</html>
